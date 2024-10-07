@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>E-waste Management Systems-Homepage</title>
+	<link href="homestyle.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+<section id="waste">
+  <img src="logo.jpg" class="logo">
+  <div class="waste-text">
+    <h1>E-waste Management System</h1>
+    <p>Collect Your Waste Make The Environment Safe</p>
+    <div class="waste-btn">
+      <a href="#"><span></span>Get Started</a>
+      <a href="#service"><span></span>Read More</a>
+    </div>
+  </div>
+</section>
+<div id="sideNav">
+  <nav>
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#feature">OUR SERVICES</a></li>
+      <li><a href="#service">ABOUT US</a></li>
+      <li><a href="#footer">CONTACT US</a></li>
+      <li><a href="registration.php">REGISTER</a></li>
+      <li><a href="Login.php">LOGIN</a>
+    </ul>
+  </nav>
+</div>
+<div id="ewastemenuBtn">
+  <img src="menu.png" id="menu">
+</div>
+<!--Features-->
+  <section id="feature">
+    <div class="title-text">
+      <p>OUR SERVICES</p>
+    </div>
+    <div class="feature-box">
+        <div class="features">
+          <h1>Data Destruction and Security</h1>
+      <div class="features-desc">
+          <div class="feature-icon">
+            <i class="fa fa-recycle"></i>
+          </div>
+          <div class="feature-text">
+            <p>Secure data destruction to protect sensitive information from falling into the wrong hands.</p>
+          </div>
+        </div>
+         <h1>E-Waste Collection and Pickup</h1>
+      <div class="features-desc">
+          <div class="feature-icon">
+            <i class="fa fa-phone"></i>
+          </div>
+          <div class="feature-text">
+            <p>Convenient pickup services for electronic waste, making recycling hassle-free.</p>
+          </div>
+        </div>
+         <h1>Corporate E-Waste Solutions</h1>
+      <div class="features-desc">
+          <div class="feature-icon">
+            <i class="fa fa-bullseye"></i>
+          </div>
+          <div class="feature-text">
+            <p>Tailored recycling programs for businesses, ensuring compliance and sustainability.</p>
+          </div>
+        </div>
+      </div>
+      <div class="features-img">
+        <img src="DataDe.jpeg">
+      </div>
+    </div>
+  </section>
+  <!--Service-->
+  <section id="service">
+    <div class="title-text">
+      <p>ABOUT US</p>
+    </div>
+    <div class="about-row">
+      <div class = "about-column">
+        <p>Through cutting-edge technologies and state-of-the-art recycling processes, we strive to unlock the hidden value in e-waste, minimizing its environmental impact. Our mission is to encourage individuals and businesses to adopt responsible recycling practices, making a collective effort to preserve our planet for future generations.</p>
+        <p>By choosing E-Waste System, you contribute to a cleaner and greener world while also promoting the sustainable use of valuable resources.</p>
+      </div>
+       <div class = "about-column">
+        <p>Our e-waste system is a convenient and environmentally friendly way to dispose of your old electronics. We collect and recycle e-waste from homes, businesses, and schools, and we ensure that it is recycled in an environmentally sound manner.Our system is easy to use. Simply schedule a pickup online or by phone, and we will come to your home or business to collect your e-waste. We accept all types of e-waste, including computers, televisions, printers, appliances, and more.</p>
+      </div>
+       <div class = "about-column">
+        <p>We recycle e-waste in a way that protects the environment. We use state-of-the-art equipment to safely disassemble and process e-waste, and we recover valuable materials that can be reused or recycled. This helps to reduce the need for raw materials and to minimize the environmental impact of e-waste.Our e-waste system is committed to protecting the environment and to providing a convenient and affordable way to dispose of your old electronics. We are proud to be a leader in the fight against e-waste, and we are committed to making a positive impact on the planet.</p>
+      </div>
+      
+    </div>
+  </section>
+    <section id="footer">
+      <img src="recycle1.jpeg" class="footer-img">
+    <div class="title-text">
+      <p>CONTACT US</p>
+    </div>
+    <div class="footer-row">
+    <div class="footer-left">
+      <h1>Contact us</h1>
+        <p>Location :Nairobi, KENYA.</p>
+        <p>Email Address :e_waste@gmail.com</p>
+        <p>Phone Number :+254 712 345678</p>                
+      </ul>
+      </div>
+    <div class="footer-right">
+    <h1>Quicklinks</h1>
+    <a href="#">HOME</a>
+    <a href="#feature">OUR SERVICES</a>
+    <a href="#service">ABOUT US</a>
+    <a href="#footer">CONTACT US</a>
+    <a href="registration.php">REGISTER</a>
+    <a href="Login.php">LOGIN</a>
+      </div>
+    </div>
+  </section>
+<script>
+  var ewastemenuBtn = document.getElementById('ewastemenuBtn');
+  var sideNav = document.getElementById('sideNav');
+  var menu = document.getElementById('menu');
+
+  sideNav.style.right == "-250px";
+
+  ewastemenuBtn.onclick = function () {
+    if(sideNav.style.right == "-250px"){
+      sideNav.style.right = "0";
+      menu.src= "close.png";
+    }else{
+      sideNav.style.right = "-250px";
+      menu.src= "menu.png";
+    }
+    
+  }
+</script>
+</body>
+</html>

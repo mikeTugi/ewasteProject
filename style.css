@@ -1,0 +1,75 @@
+*{
+	font-family: DM Serif Display;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline:none;
+	border: none;
+	text-decoration: none;
+}
+.formContainer{
+	min-height: 100hv;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	padding-bottom: 70px;
+
+}
+
+.formContainer form{
+	padding:20px;
+	border-radius: 15px;
+	box-shadow:0 5px 10px rgba(0, 0, 0, 0.1);
+	background: #fff;
+	text-align: center;
+	width: 500px;
+}
+.formContainer form h2 {
+	font-size: 40px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	color: green;
+}
+.formContainer form input,
+.formContainer form select
+{
+	width: 100%;
+	padding: 10px 15px;
+	font-size: 20px;
+	margin: 8px 0px;
+	background: #eee;
+	border-radius: 20px;
+}
+.formContainer form .formButton{
+	background-color: #59FC66;
+}
+.formContainer form .formButton:hover{
+	background: #05A512;
+	color: white;
+}
+.formContainer form p{
+	margin-top: 10px;
+	font-size: 20px;
+	color:black;
+}
+.formContainer form p a{
+	color: #00830B;
+}
+.formContainer form .errormessage{
+	margin: 10px 0px;
+	display: block;
+	background:#05A512;
+	color: white;
+	border-radius: 20px;
+	font-size:20px;
+}
+@media screen and (max-width:770px){
+	.formContainer{
+		flex-basis: 100%;
+		font-size: 14px;
+	}
+
+}
+
+
